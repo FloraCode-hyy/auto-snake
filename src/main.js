@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import installElementPlus from './plugins/element'
+import './assets/font/iconfont.css'
+import './assets/font/iconfont'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+installElementPlus(app)
+app.mount('#app')
